@@ -134,6 +134,10 @@ function anybar() {
       echo -n $1 |nc -4u -w0 localhost ${2:-1738} 
 }
 
+# Useful git aliases
+alias gis="git status -s"
+alias glg="git lg"
+
 # bindkey -e
 # bindkey '^[[1;9C' forward-word
 # bindkey '^[[1;9D' backward-word
