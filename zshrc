@@ -106,6 +106,8 @@ alias idea="open -a IntelliJ\ IDEA\ 14"
 alias sourcetree="open -a SourceTree"
 alias webstorm="open -a WebStorm"
 alias pycharm="open -a PyCharm"
+alias st="open -a SourceTree"
+alias subl="open -a Sublime\ Text"
 
 # Set JAVA_HOME to 1.8
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
