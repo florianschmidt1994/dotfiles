@@ -102,7 +102,7 @@ export PATH=$PATH:$GOPATH/bin
 alias prettyjson="python -m json.tool"
 
 # Aliases for common application to open from terminal
-alias idea="open -a IntelliJ\ IDEA\ 14"
+alias idea="open -a IntelliJ\ IDEA\ 15"
 alias sourcetree="open -a SourceTree"
 alias webstorm="open -a WebStorm"
 alias pycharm="open -a PyCharm"
@@ -118,13 +118,13 @@ function mcd() {
 }
 
 function dockerize() {
-    docker-machine env default
-    eval "$(docker-machine env default)"
+    docker-machine env devbox 
+    eval "$(docker-machine env devbox)"
 }
 
 function dockerip() {
-    echo "$(docker-machine ip default)" | pbcopy
-    docker-machine ip default
+    echo "$(docker-machine ip devbox)" | pbcopy
+    docker-machine ip devbox 
 }
 
 # Server current folder on port 8080
@@ -140,17 +140,5 @@ function anybar() {
 alias gis="git status -s"
 alias glg="git lg"
 
-# bindkey -e
-# bindkey '^[[1;9C' forward-word
-# bindkey '^[[1;9D' backward-word
-# bindkey '^[begin' beginning-of-line
-# bindkey '^[end' end-of-line
-
 # added by travis gem
 [ -f /Users/florianschmidt/.travis/travis.sh ] && source /Users/florianschmidt/.travis/travis.sh
-
-# The next line updates PATH for the Google Cloud SDK.
-source '/Users/florianschmidt/google-cloud-sdk/path.zsh.inc'
-
-# The next line enables shell command completion for gcloud.
-source '/Users/florianschmidt/google-cloud-sdk/completion.zsh.inc'
