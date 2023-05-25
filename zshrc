@@ -9,8 +9,8 @@ ZSH_THEME="robbyrussell"
 
 # Which plugins would you like to load?
 # Configure zsh plugins and load oh-my-zsh
-plugins=(git)
-source $ZSH/oh-my-zsh.sh
+#plugins=(git)
+#source $ZSH/oh-my-zsh.sh
 
 # Source various configurations
 source ~/dotfiles/aliases.sh
@@ -18,3 +18,4 @@ source ~/dotfiles/jenv.sh
 source ~/dotfiles/fzf.sh
 source ~/dotfiles/nvm.sh
 source ~/dotfiles/misc.sh
+source ~/dotfiles/starship.sh
