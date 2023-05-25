@@ -1,0 +1,14 @@
+[core]
+	excludesfile = /Users/flos/.gitignore_global
+[alias]
+	co = checkout
+	yolo = push --force
+	lg = log --color --graph --pretty=format:'%C(bold white)%h%Creset -%C(bold green)%d%Creset %s %C(bold green)(%cr)%Creset %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    pish = push
+	s = status -s
+[push]
+	default = current
+[user]
+	name = Florian Schmidt
+[init]
+	defaultBranch = main

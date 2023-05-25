@@ -1,0 +1,5 @@
+alias gis="git status --short"
+alias st="open -a SourceTree"
+alias idea="open -a IntelliJ\ Idea"
+alias tf="terraform"
+alias fleet="open -a Fleet\ Early\ Access\ Program"
