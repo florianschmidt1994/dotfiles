@@ -1,2 +1,2 @@
 export STARSHIP_CONFIG=~/dotfiles/starship.toml
-eval "$(~/dotfiles/starship init zsh)"
+eval "$(starship init zsh)"
